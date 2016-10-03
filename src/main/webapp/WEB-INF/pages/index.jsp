@@ -3,7 +3,7 @@
 
 <head>
 <title>NIIT HUB</title>
-<%@include file="/WEB-INF/framework/function.jsp"%>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,9 +11,12 @@
 <script type="application/x-javascript">
 	
 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-function hideURLbar(){ window.scrollTo(0,1); } 
+function hideURLbar(){ window.scrollTo(0,1); }
 
 </script>
+
+
+
 
 <!--light-box-files -->
 <script>
@@ -56,7 +59,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 </script>
 <!-- start-smoth-scrolling -->
 
-
+<jsp:include page="function.jsp" />
 
 </head>
 <body>
