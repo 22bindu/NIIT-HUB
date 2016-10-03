@@ -1,22 +1,45 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-
-<head>
-<title>NIIT HUB</title>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 
+
+<!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <script type="application/x-javascript">
-	
-addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-function hideURLbar(){ window.scrollTo(0,1); }
-
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } 
 </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link href="<c:url value="/resources/css/style.css"/>" rel="stylesheet">
+<link href="<c:url value="/resources/css/bootstrap.min.css"/>"
+	rel="stylesheet">
 
+<link href="<c:url value="/resources/css/font-awesome.min.css"/>"
+	rel="stylesheet">
 
+<!-- //css files -->
+<!-- online-fonts -->
+<link
+	href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext,vietnamese"
+	rel="stylesheet">
+<link
+	href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900iSource+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	rel="stylesheet">
+<!-- js -->
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/resources/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
 
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/resources/js/bootstrap-3.1.1.min.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/resources/js/jquery.chocolat.js"></script>
+<link href="<c:url value="/resources/css/chocolat.css"/>"
+	rel="stylesheet">
 
 <!--light-box-files -->
 <script>
@@ -26,7 +49,8 @@ function hideURLbar(){ window.scrollTo(0,1); }
 </script>
 
 <!-- //js -->
-<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/resources/js/responsiveslides.min.js"></script>
 <script>
 	$(function() {
 		$("#slider").responsiveSlides({
@@ -47,6 +71,8 @@ function hideURLbar(){ window.scrollTo(0,1); }
 
 
 <!-- start-smoth-scrolling -->
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/move-top.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event) {
@@ -59,7 +85,66 @@ function hideURLbar(){ window.scrollTo(0,1); }
 </script>
 <!-- start-smoth-scrolling -->
 
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>NIIT HUB</title>
+
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" /> 
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+
+<script type="application/x-javascript">
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); }
+
+</script>
+
+light-box-files
+<script>
+	$(function() {
+		$('.gallery-grid a').Chocolat();
+	});
+</script>
+
+//js
+
+<script>
+	$(function() {
+		$("#slider").responsiveSlides({
+			auto : true,
+			pager : false,
+			nav : true,
+			speed : 1000,
+			namespace : "callbacks",
+			before : function() {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after : function() {
+				$('.events').append("<li>after event fired.</li>");
+			}
+		});
+	});
+</script>
+
+
+start-smoth-scrolling
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 1000);
+		});
+	});
+</script>
+start-smoth-scrolling
 <jsp:include page="function.jsp" />
+ -->
+
 
 </head>
 <body>
@@ -190,7 +275,9 @@ function hideURLbar(){ window.scrollTo(0,1); }
 					involved in a common task to achieve their goals. One of the
 					earliest definitions of NIIT HUB is 'intentional group processes
 					plus software to support them.'</h4>
-				<img src="images/sa.jpg" alt="sucess">
+				 <img src="http://www.technosofttechnology.com/wp-content/uploads/gallery/73599285aa529464f2980a96b05f098a.jpg"
+					alt="sucess"> 
+					
 				<p>"NIIT Limited is an Indian Multinational company that offers
 					learning management and training delivery solutions to
 					corporations, institutions and individuals. It has three main lines
@@ -344,7 +431,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 							class="b-link-stripe b-animate-go  thickbox">
 
 							<figure class="effect-bubba">
-								<img class="img-responsive" src="images/g1.jpg" alt="">
+								<img class="img-responsive" src="http://egov.eletsonline.com/wp-content/uploads/2015/08/NIIT_Technologies.png" alt="">
 								<figcaption>
 									<h4 class="gal">NIIT HUB</h4>
 									<p class="gal1">"IT CAN CHANGE OVER LIFE STYLE"</p>
@@ -356,7 +443,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 						<a href="images/g2.jpg"
 							class="b-link-stripe b-animate-go  thickbox">
 							<figure class="effect-bubba">
-								<img class="img-responsive" src="images/g2.jpg" alt="">
+								<img class="img-responsive" src="https://doctorgalacticandthelabcoatcowboy.files.wordpress.com/2016/07/blog-pic.jpg?w=1200" alt="">
 								<figcaption>
 									<h4 class="gal">BLOG</h4>
 									<p class="gal1">"Add new material to or regularly update a
@@ -369,7 +456,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 						<a href="images/g3.jpg"
 							class="b-link-stripe b-animate-go  thickbox">
 							<figure class="effect-bubba">
-								<img class="img-responsive" src="images/g3.jpg" alt="">
+								<img class="img-responsive" src="http://www.limeade.com/wp-content/uploads/2014/04/BusinessMeetingPositiveDiscussion.jpg" alt="">
 								<figcaption>
 									<h4 class="gal">DISCUSSION</h4>
 									<p class="gal1">"The action or process of talking about
@@ -383,7 +470,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 						<a href="images/g4.jpg"
 							class="b-link-stripe b-animate-go  thickbox">
 							<figure class="effect-bubba">
-								<img class="img-responsive" src="images/g4.jpg" alt="">
+								<img class="img-responsive" src="http://the-dsa.com/wp-content/uploads/2014/06/DC-Tablet-with-Books-illustration.jpg" alt="">
 								<figcaption>
 									<h4 class="gal">ONLINE-BOOKS</h4>
 									<p class="gal1">"An electronic book or periodical
@@ -396,7 +483,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 						<a href="images/g5.jpg"
 							class="b-link-stripe b-animate-go  thickbox">
 							<figure class="effect-bubba">
-								<img class="img-responsive" src="images/g5.jpg" alt="">
+								<img class="img-responsive" src="http://www.realpsychic.info/wp-content/uploads/2014/01/free-online-psychic-chat-online-chat-psychic-chat-online-Bigstock.jpg" alt="">
 								<figcaption>
 									<h4 class="gal">ONLINE-CHAT</h4>
 									<p class="gal1">"Any kind of communication over the
@@ -409,7 +496,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 						<a href="images/g6.jpg"
 							class="b-link-stripe b-animate-go  thickbox">
 							<figure class="effect-bubba">
-								<img class="img-responsive" src="images/g6.jpg" alt="">
+								<img class="img-responsive" src="http://blog.cashcrate.com/wp-content/uploads/2013/07/forum.jpg" alt="">
 								<figcaption>
 									<h4 class="gal">FORUM</h4>
 									<p class="gal1">"A meeting or medium where ideas and views
@@ -493,7 +580,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 					<ul class="demo-2 effect">
 						<li>
 							<h3 class="zero">COMMUNICATION SKILLS</h3>
-							<p class="zero">Lorem ipsum dolor sit amet.</p>
+							<p class="zero">IN-DEPTH TRAINING FOR IT PROS.</p>
 						</li>
 						<li><img class="top"
 							src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/1459975_10203149726724202_5260619499647161715_n.jpg?oh=78e43742f56dc1ea4863eebb5d869c68&oe=587ADDA8"
@@ -512,7 +599,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 					<ul class="demo-2 effect">
 						<li>
 							<h3 class="zero">GENERAL SCIENCE</h3>
-							<p class="zero">Lorem ipsum dolor sit amet.</p>
+							<p class="zero">IN-DEPTH TRAINING FOR IT PROS.</p>
 						</li>
 						<li><img class="top" src="images/f3.jpg" alt="" /></li>
 					</ul>
@@ -528,7 +615,7 @@ function hideURLbar(){ window.scrollTo(0,1); }
 					<ul class="demo-2 effect">
 						<li>
 							<h3 class="zero">MATHEMATICS</h3>
-							<p class="zero">Lorem ipsum dolor sit amet.</p>
+							<p class="zero">IN-DEPTH TRAINING FOR IT PROS.</p>
 						</li>
 						<li><img class="top" src="images/f4.jpg" alt="" /></li>
 					</ul>
